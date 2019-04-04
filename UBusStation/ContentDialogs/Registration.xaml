@@ -1,0 +1,37 @@
+﻿<ContentDialog
+    x:Class="UBusStation.ContentDialogs.Registration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UBusStation.ContentDialogs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Регистрация"
+    PrimaryButtonText="Зарегистрироваться"
+    SecondaryButtonText="Отмена"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Name="TbFirstName" Grid.Row="0" Margin="0,5" PlaceholderText="Имя"/>
+        <TextBox Name="TbLastName" Grid.Row="1" Margin="0,5" PlaceholderText="Фамилия"/>
+        <TextBox Name="TbPatronymic" Grid.Row="2" Margin="0,5" PlaceholderText="Отчество"/>
+        <TextBox Name="TbPassportID" Grid.Row="3" Margin="0,5" PlaceholderText="Серия, номер паспорта"/>
+        <TextBox Name="TbMail" Grid.Row="4" Margin="0,5" PlaceholderText="mail"/>
+        <TextBox Name="TbPhoneNumber" Grid.Row="5" Margin="0,5" PlaceholderText="Номер телефона"/>
+        <PasswordBox Name="PbPassword1" Grid.Row="6" Margin="0,5" PlaceholderText="Пароль"/>
+        <PasswordBox Name="PbPassword2" Grid.Row="7" Margin="0,5" PlaceholderText="Повторите пароль"/>
+        <CheckBox Name="CbAgree" Grid.Row="8" Content="Принимаю условия" IsChecked="False" Checked="CbAgree_Checked" Unchecked="CbAgree_Unchecked"/>
+    </Grid>
+</ContentDialog>
